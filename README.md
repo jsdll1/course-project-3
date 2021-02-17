@@ -11,4 +11,4 @@ The run_Analysis script works as follows
 4. The subject data from the subject_test.txt and subject_Train.txt files are combined through rbind and added to the filteredData data frame.
 5. The activity data from the y_test.txt and y_train.txt files are combined through rbind and added to the filteredData data frame. The integers are then changed to a more descriptive name through recoding and mutating the column.
 6. The column names are changed to a more descriptive name through the rename_with function.
-7. The second data set is created by grouping the filteredData data frame by activity and subject, and then summarizing all the other columns by getting it's mean.
+7. The second data set is created by grouping the filteredData data frame by activity and subject, and then summarizing all the other columns by getting it's mean. This is in turn written into a file named averagedData.txt.

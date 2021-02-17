@@ -53,10 +53,7 @@ run_Analysis <- function () {
   averagedData <- filteredData %>% group_by(activity, subject) %>% 
     summarize_all(~mean(.x))
   
-  
-  #return both data sets
-  output$filteredData <- filteredData
-  output$averagedData <- averagedData
-  output
+  #output averaged data set into a file
+  write.table(averagedData, file = "./averagedData.txt", row.names = FALSE)
 
 }
